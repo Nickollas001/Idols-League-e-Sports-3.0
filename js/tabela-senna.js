@@ -73,6 +73,7 @@ var astonMartinImagem = "equipes-f1/AstonMartin.png"
 
 // Posições corrida Australia ->
 
+
 var PosicaoAnselmoAustralia = TerceiraPosicaoCorrida;
 var PosicaoFelipeSilvaAustralia = SextaPosicaoCorrida;
 
@@ -86,6 +87,12 @@ var PosicaoAnselmoItalia = QuintaPosicaoCorrida;
 
 var PosicaoAnselmoSingapura = SegundaPosicaoCorrida;
 
+// Posições corrida Brasil ->
+
+var PosicaoAnselmoBrasil = TerceiraPosicaoCorrida;
+// Posições corrida Miami ->
+
+var PosicaoAnselmoMiami = SegundaPosicaoCorrida;
 
 // FIM CORRIDAS NORMAIS ->
 
@@ -94,9 +101,12 @@ var PosicaoAnselmoSingapura = SegundaPosicaoCorrida;
 // Corridas Sprint ->
 
 
-// Posições Sprint ->
+// Posições Sprint Itália ->
 
 var PosicaoAnselmoItaliaSprint = QuintaPosicaoSprint;
+// Posições Sprint Brasil ->
+
+var PosicaoAnselmoBrasilSprint = DecimaPrimeiraPosicaoSprint;
 
 //Piloto do Dia
 
@@ -105,7 +115,7 @@ PilotoDoDiaJoaoAnselmoVal = 1
 
 //Contagem de Pontos ->
 
-var poinstJoaoAnselmo = parseInt(PilotoDoDiaJoaoAnselmoVal) + parseInt(PosicaoAnselmoAustralia) + parseInt(PosicaoAnselmoItalia) + parseInt(PosicaoAnselmoItaliaSprint) + parseInt(PosicaoAnselmoSingapura);
+var poinstJoaoAnselmo = parseInt(PilotoDoDiaJoaoAnselmoVal) + parseInt(PosicaoAnselmoAustralia) + parseInt(PosicaoAnselmoItalia) + parseInt(PosicaoAnselmoItaliaSprint) + parseInt(PosicaoAnselmoSingapura) + parseInt(PosicaoAnselmoBrasil) + parseInt(PosicaoAnselmoBrasilSprint) + parseInt(PosicaoAnselmoMiami);
 var pointsFelipeSilva =  parseInt(PosicaoFelipeSilvaAustralia);
 
 
@@ -135,12 +145,16 @@ var etapa2Anselmo = document.getElementById("etapa2Anselmo");
 var etapa2SprintAnselmo = document.getElementById("etapa2SprintAnselmo");
 var etapa3Anselmo = document.getElementById("etapa3Anselmo");
 var etapa4Anselmo = document.getElementById("etapa4Anselmo");
+var etapa4SprintAnselmo = document.getElementById("etapa4SprintAnselmo");
 var etapa5Anselmo = document.getElementById("etapa5Anselmo");
 
 etapa1Anselmo.innerHTML = PosicaoAnselmoAustralia;
 etapa2Anselmo.innerHTML = PosicaoAnselmoItalia;
 etapa2SprintAnselmo.innerHTML = PosicaoAnselmoItaliaSprint;
 etapa3Anselmo.innerHTML = PosicaoAnselmoSingapura;
+etapa4Anselmo.innerHTML = PosicaoAnselmoBrasil;
+etapa4SprintAnselmo.innerHTML = PosicaoAnselmoBrasilSprint;
+etapa5Anselmo.innerHTML = PosicaoAnselmoMiami;
 joãoAnselmoDriver.innerHTML = joãoAnselmo;
 
 
