@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: regular;
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('files/Formula1-Regular_web_0.ttf');
+}
+@font-face {
+    font-family: 'bold';
+    src: url('files/Formula1-Bold_web_0.ttf');
+}
+@font-face {
+    font-family: 'wide';
+    src: url('files/Formula1-Wide_web_0.ttf');
+}
+
+.header{
+    background: linear-gradient(90deg,  #ff8800 0%, #39f300 100%);
+    padding: 10px;
+}
+
+.seletor-liga a{
+    text-decoration: none;
+    color: black;
+}
+tbody img{
+    width: 50px;
+    border-radius: 30px;
+}
+
+td{
+    text-align: center;
+    justify-content: left;
+    align-items: center;
+}
+.linha2-verticalmente{
+    display: flex;
+}
+
+.lastro{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.tabela-senna{
+    padding-top: 50px;
+    width: 90vh;
+    margin: 0 auto;
+}
+
+
+.info img{
+    width: 50px;
+}
+
+.info{
+    border-spacing: 10px;
+}
