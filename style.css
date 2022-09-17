@@ -22,6 +22,11 @@
     padding: 10px;
 }
 
+.titulo{
+    text-align: center;
+    padding-top: 50px;
+}
+
 .seletor-liga a{
     text-decoration: none;
     color: black;
@@ -29,7 +34,7 @@
 tbody img{
     width: 50px;
     height: 56px;
-    border-radius: 30px;
+    border-radius: 25px;
 }
 
 td{
@@ -50,9 +55,10 @@ td{
 }
 
 .tabela-senna{
-    padding-top: 50px;
-    width: 90vh;
-    margin: 0 auto;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 
