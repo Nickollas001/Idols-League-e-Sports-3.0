@@ -56,7 +56,7 @@ var joãoAnselmo = "João Anselmo";
 var joãoAnselmoImagem = "pilotos/anlsemo_camp.jpg";
 
 var felipeSilva = "Felipe Silva";
-var felipeSilvaImagem = "pilotos/mazepin.png"
+var felipeSilvaImagem = "pilotos/FelipeSantos.jpeg"
 
 
 // Fim Pilotos ->
@@ -94,6 +94,17 @@ var PosicaoAnselmoBrasil = TerceiraPosicaoCorrida;
 
 var PosicaoAnselmoMiami = SegundaPosicaoCorrida;
 
+// Posições corrida Inglaterra ->
+
+var PosicaoAnselmoInglaterra = PrimeiraPosicaoCorrida;
+
+// Posições corrida Estados Unidos ->
+
+var PosicaoAnselmoEUA = "NA";
+// Posições corrida Estados Unidos ->
+
+var PosicaoAnselmoAbuDhabi = "NA";
+
 // FIM CORRIDAS NORMAIS ->
 
 
@@ -108,6 +119,14 @@ var PosicaoAnselmoItaliaSprint = QuintaPosicaoSprint;
 
 var PosicaoAnselmoBrasilSprint = DecimaPrimeiraPosicaoSprint;
 
+// Posições Sprint Brasil ->
+
+var PosicaoAnselmoInglaterraSprint = TerceiraPosicaoSprint;
+
+// Posições Sprint Abudhabi ->
+
+var PosicaoAnselmoAbuDhabiSprint = "NA";
+
 //Piloto do Dia
 
 PilotoDoDiaJoaoAnselmoVal = 1
@@ -115,7 +134,7 @@ PilotoDoDiaJoaoAnselmoVal = 1
 
 //Contagem de Pontos ->
 
-var poinstJoaoAnselmo = parseInt(PilotoDoDiaJoaoAnselmoVal) + parseInt(PosicaoAnselmoAustralia) + parseInt(PosicaoAnselmoItalia) + parseInt(PosicaoAnselmoItaliaSprint) + parseInt(PosicaoAnselmoSingapura) + parseInt(PosicaoAnselmoBrasil) + parseInt(PosicaoAnselmoBrasilSprint) + parseInt(PosicaoAnselmoMiami);
+var poinstJoaoAnselmo = parseInt(PilotoDoDiaJoaoAnselmoVal) + parseInt(PosicaoAnselmoAustralia) + parseInt(PosicaoAnselmoItalia) + parseInt(PosicaoAnselmoItaliaSprint) + parseInt(PosicaoAnselmoSingapura) + parseInt(PosicaoAnselmoBrasil) + parseInt(PosicaoAnselmoBrasilSprint) + parseInt(PosicaoAnselmoMiami) + parseInt(PosicaoAnselmoInglaterra) + parseInt(PosicaoAnselmoInglaterraSprint);
 var pointsFelipeSilva =  parseInt(PosicaoFelipeSilvaAustralia);
 
 
@@ -147,6 +166,11 @@ var etapa3Anselmo = document.getElementById("etapa3Anselmo");
 var etapa4Anselmo = document.getElementById("etapa4Anselmo");
 var etapa4SprintAnselmo = document.getElementById("etapa4SprintAnselmo");
 var etapa5Anselmo = document.getElementById("etapa5Anselmo");
+var etapa6Anselmo = document.getElementById("etapa6Anselmo");
+var etapa6SprintAnselmo = document.getElementById("etapa6SprintAnselmo");
+var etapa7Anselmo = document.getElementById("etapa7Anselmo");
+var etapa8Anselmo = document.getElementById("etapa8Anselmo");
+var etapa8SprintAnselmo = document.getElementById("etapa8SprintAnselmo");
 
 etapa1Anselmo.innerHTML = PosicaoAnselmoAustralia;
 etapa2Anselmo.innerHTML = PosicaoAnselmoItalia;
@@ -155,6 +179,11 @@ etapa3Anselmo.innerHTML = PosicaoAnselmoSingapura;
 etapa4Anselmo.innerHTML = PosicaoAnselmoBrasil;
 etapa4SprintAnselmo.innerHTML = PosicaoAnselmoBrasilSprint;
 etapa5Anselmo.innerHTML = PosicaoAnselmoMiami;
+etapa6Anselmo.innerHTML = PosicaoAnselmoInglaterra;
+etapa6SprintAnselmo.innerHTML = PosicaoAnselmoInglaterraSprint;
+etapa7Anselmo.innerHTML = PosicaoAnselmoEUA;
+etapa8Anselmo.innerHTML = PosicaoAnselmoAbuDhabi;
+etapa8SprintAnselmo.innerHTML = PosicaoAnselmoAbuDhabiSprint;
 joãoAnselmoDriver.innerHTML = joãoAnselmo;
 
 
