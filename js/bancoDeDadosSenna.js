@@ -67,6 +67,8 @@ var williams = "Williams"
 var williamsImagem = "equipes-f1/Williams.png"
 var astonMartin = "Aston Martin"
 var astonMartinImagem = "equipes-f1/AstonMartin.png"
+var ferrari = "Ferrari"
+var ferrariImagem = "equipes-f1/Ferrari.png"
 
 // Fim Carros ->
 
@@ -100,10 +102,10 @@ var PosicaoAnselmoInglaterra = PrimeiraPosicaoCorrida;
 
 // Posições corrida Estados Unidos ->
 
-var PosicaoAnselmoEUA = "NA";
+var PosicaoAnselmoEUA = QuartaPosicaoCorrida;
 // Posições corrida Estados Unidos ->
 
-var PosicaoAnselmoAbuDhabi = "NA";
+var PosicaoAnselmoAbuDhabi = SegundaPosicaoCorrida;
 
 // FIM CORRIDAS NORMAIS ->
 
@@ -125,17 +127,26 @@ var PosicaoAnselmoInglaterraSprint = TerceiraPosicaoSprint;
 
 // Posições Sprint Abudhabi ->
 
-var PosicaoAnselmoAbuDhabiSprint = "NA";
+var PosicaoAnselmoAbuDhabiSprint = SegundaPosicaoSprint;
 
+//POLES
+
+var poleJoaoAnselmoVal = "3";
+var poleFelipeSilvaVal = "1";
 //Piloto do Dia
 
-PilotoDoDiaJoaoAnselmoVal = 1
+var PilotoDoDiaJoaoAnselmoVal = "1";
+var pilotoDoDiaFelipeSilvaVal = "2";
 
+//Melhor Volta
+
+var MelhorVoltaJoaoAnselmoVal = "3";
+var MelhorVoltaFelipeSilvaVal = "2";
 
 //Contagem de Pontos ->
 
-var poinstJoaoAnselmo = parseInt(PilotoDoDiaJoaoAnselmoVal) + parseInt(PosicaoAnselmoAustralia) + parseInt(PosicaoAnselmoItalia) + parseInt(PosicaoAnselmoItaliaSprint) + parseInt(PosicaoAnselmoSingapura) + parseInt(PosicaoAnselmoBrasil) + parseInt(PosicaoAnselmoBrasilSprint) + parseInt(PosicaoAnselmoMiami) + parseInt(PosicaoAnselmoInglaterra) + parseInt(PosicaoAnselmoInglaterraSprint);
-var pointsFelipeSilva =  parseInt(PosicaoFelipeSilvaAustralia);
+var poinstJoaoAnselmo = parseInt(PilotoDoDiaJoaoAnselmoVal) + parseInt(MelhorVoltaJoaoAnselmoVal) + parseInt(poleJoaoAnselmoVal)+ parseInt(PosicaoAnselmoAustralia) + parseInt(PosicaoAnselmoItalia) + parseInt(PosicaoAnselmoItaliaSprint) + parseInt(PosicaoAnselmoSingapura) + parseInt(PosicaoAnselmoBrasil) + parseInt(PosicaoAnselmoBrasilSprint) + parseInt(PosicaoAnselmoMiami) + parseInt(PosicaoAnselmoInglaterra) + parseInt(PosicaoAnselmoInglaterraSprint) +parseInt(PosicaoAnselmoEUA) + parseInt(PosicaoAnselmoAbuDhabi) + parseInt(PosicaoAnselmoAbuDhabiSprint);
+var pointsFelipeSilva = parseInt(poleFelipeSilvaVal) + parseInt(pilotoDoDiaFelipeSilvaVal) + parseInt(MelhorVoltaFelipeSilvaVal) + parseInt(PosicaoFelipeSilvaAustralia);
 
 
 
@@ -143,19 +154,19 @@ var pointsFelipeSilva =  parseInt(PosicaoFelipeSilvaAustralia);
 
 
 // Driver 1 ->
-driver1.innerHTML = felipeSilva;
-driver1Imagem.setAttribute("src",felipeSilvaImagem);
-lastro1.innerHTML = williams;
-lastro1Imagem.setAttribute("src",williamsImagem);
-pontos1.innerHTML = pointsFelipeSilva;
+driver1.innerHTML = joãoAnselmo;
+driver1Imagem.setAttribute("src",joãoAnselmoImagem);
+lastro1.innerHTML = ferrari;
+lastro1Imagem.setAttribute("src",ferrariImagem);
+pontos1.innerHTML = poinstJoaoAnselmo;
 
 
 // Driver 2 ->
-driver2.innerHTML = joãoAnselmo;
-driver2Imagem.setAttribute("src",joãoAnselmoImagem);
-lastro2.innerHTML = williams;
-lastro2Imagem.setAttribute("src",williamsImagem);
-pontos2.innerHTML = poinstJoaoAnselmo;
+driver2.innerHTML = felipeSilva;
+driver2Imagem.setAttribute("src",felipeSilvaImagem);
+lastro2.innerHTML = ferrari;
+lastro2Imagem.setAttribute("src",ferrariImagem);
+pontos2.innerHTML = pointsFelipeSilva;
 
 
 var joãoAnselmoDriver = document.getElementById("joaoAnselmoDriverSennaT8");
@@ -190,7 +201,12 @@ joãoAnselmoDriver.innerHTML = joãoAnselmo;
 var pontosAnselmo = document.getElementById("pontosAnselmo") ;
 var PilotoDoDiaJoaoAnselmoEl = document.getElementById("PilotoDoDiaJoaoAnselmo");
 PilotoDoDiaJoaoAnselmoEl.innerHTML = PilotoDoDiaJoaoAnselmoVal;
-pontosAnselmo.innerHTML = poinstJoaoAnselmo
+pontosAnselmo.innerHTML = poinstJoaoAnselmo;
+var MelhorVoltaJoaoAnselmoEl = document.getElementById("MelhorVoltaJoaoAnselmo");
+MelhorVoltaJoaoAnselmoEl.innerHTML = MelhorVoltaJoaoAnselmoVal;
+var poleJoaoAnselmoEl= document.getElementById("PoleJoaoAnselmo");
+poleJoaoAnselmoEl.innerHTML = poleJoaoAnselmoVal;
+
 
 
 
